@@ -12,12 +12,12 @@ const Home = () => {
       <div className="home">
         <div className="intro">
           <h1>
-            Inspiramos la jerarquización del <br></br> corretaje en
+            Inspiramos la jerarquización del corretaje en
             Latinoamérica
           </h1>
           <p>
             Somos el Instituto  de Formación Oficial del sector inmobiliario
-            latinoamericano.<br></br> 700.000 corredores en 18 países conforman
+            latinoamericano. 700.000 corredores en 18 países conforman
             la Confederación Inmobiliaria Latinoamericana (CILA)
           </p>
         </div>

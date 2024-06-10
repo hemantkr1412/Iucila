@@ -27,6 +27,7 @@
   background-position: center;
   background-size: cover;
   padding: 16rem 6rem 4rem 6rem;
+  color: #fff;
 }
 
 .intro h1 {
@@ -46,9 +47,10 @@
   /* height: auto; */
   background-image: url("/assets/intro2BG.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   padding: 6rem 4rem 8rem 6rem;
   gap: 4rem;
+  color: #fff;
   /* justify-content: space-between; */
 }
 
@@ -111,8 +113,8 @@
   width: 100%;
   background-image: url("/assets/objective.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 4rem 4rem;
+  background-size: 100% 100%;
+  padding: 4rem;
   gap: 3rem;
 }
 
@@ -161,7 +163,7 @@
   width: 100%;
   background-image: url("/assets/somos.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .somosTitle h1 {
@@ -198,6 +200,7 @@
   flex: 1 1 calc(26.66% - 2rem);
   max-width: calc(26.66% - 2rem);
   box-sizing: border-box;
+  color: #fff;
 }
 
 .somosBox h4 {
@@ -214,7 +217,7 @@
   line-height: 17px;
 }
 
-/* Slider*/
+/* Carousal*/
 
 .slider-container {
   display: flex;
@@ -305,6 +308,7 @@
 .notice h2 {
   font-size: 32px;
   font-weight: 700;
+  color: #fff;
 }
 
 .noticeContainer {
@@ -323,6 +327,7 @@
   width: 340px;
   border-radius: 10px;
   box-sizing: border-box;
+  color: #000;
 }
 
 .noticeBox img {
@@ -359,10 +364,176 @@
   margin-top: auto;
 }
 
+@media only screen and (min-width: 1560px) {
+  .intro {
+    height: 93lvh;
+  }
+}
+
 @media only screen and (max-width: 1270px) {
   .somosBox {
     flex: none;
     max-width: none;
     box-sizing: none;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .noticeContainer {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .objectives {
+    padding: 4rem 2rem;
+  }
+
+  .obj,
+  .val {
+    width: 386px;
+  }
+
+  .obj h2,
+  .val h2 {
+    font-size: 26px;
+  }
+
+  .obj li,
+  .val li {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .obj,
+  .val {
+    width: 315px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .Gline{
+    border: 5px solid #90ac37
+  }
+
+  .intro{
+    padding: 10rem 2rem 2rem 2rem;
+  }
+
+  .intro h1 {
+    font-size: 14px;
+  }
+
+  .intro p {
+    font-size: 7px;
+  }
+
+  .intro2{
+    padding: 4rem 1rem ;
+  }
+
+  .title2 h2 {
+    font-size: 10px;
+  }
+
+  .title2 p {
+    font-size: 6px;
+  }
+
+  .intro2part2 h2 {
+    font-size: 10px;
+  }
+
+  .intro2part2 p {
+    font-size: 6px;
+  }
+
+  .objectives {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .obj,
+  .val {
+    width: 159px;
+  }
+
+  .obj ul, .val ul{
+    padding: 0 0 0 0.5rem;
+  }
+
+  .obj h2,
+  .val h2 {
+    font-size: 10px;
+  }
+
+  .obj li,
+  .val li {
+    font-size: 6px;
+  }
+
+  .somosTitle h1 {
+    font-size: 16px;
+    padding: 4rem 2rem;
+  }
+
+  .somosContainer{
+    padding: 4rem 1rem;
+  }
+
+  .somosBox {
+    width: 90%;
+  }
+
+  .somosBox h4 {
+    font-size: 8px;
+  }
+
+  .somosBox p {
+    font-size: 10px;
+  }
+
+  .box-item {
+    width: 115px;
+  }
+
+  .box-text h4 {
+    font-size: 6px;
+  }
+  .box-text p {
+    font-size: 5px;
+  }
+
+.notice{
+  padding: 1rem;
+}
+
+  .notice h2 {
+    font-size: 10px;
+  }
+
+  .noticeBox{
+    width: 115px;
+    }
+
+    .noticeContainer{
+      justify-content: space-between !important;
+      gap: 5px;
+    }
+    .notice-text{
+      padding: 5px;
+    }
+
+  .notice-text h5 {
+    font-size: 4px;
+  }
+
+  .notice-text h4 {
+    font-size: 6px;
+  }
+
+  .notice-text p {
+    font-size: 5px;
   }
 }
