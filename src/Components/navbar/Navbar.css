@@ -1,0 +1,36 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    position: relative;
+    background-color: #fff;
+}
+
+.nav-logo{
+    display: flex;
+    width: 20%;
+}
+
+.nav-links{
+    color: #000;
+    display: flex;
+    width: 60%;
+    /* gap: 50px; */
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav-links p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.nav-links p:focus{
+    font-weight: 700;
+}

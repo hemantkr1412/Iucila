@@ -1,0 +1,13 @@
+#root {
+  max-width: 1280px;
+  margin: 0 ;
+  /* padding: 2rem; */
+  /* text-align: center; */
+  background-color: #fff;
+}
+
+.app{
+  width: 98.9vw;
+  background-color: #fff;
+}
+
