@@ -410,18 +410,19 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 935px) {
   .obj,
   .val {
     width: 315px;
+  }
+  
+  .Rline{
+    display: none;
   }
 }
 
 @media only screen and (max-width: 769px) {
 
-  .Rline{
-    display: none;
-  }
 
   .Gline{
     border: 5px solid #90ac37
@@ -517,8 +518,8 @@
   }
 
   .box-item {
-    width: 125px;
-    min-height:185px;
+    width: 175px;
+    min-height:265px;
   }
 
   .box-text{
@@ -526,11 +527,11 @@
   }
 
   .box-text h4 {
-    font-size: 6px;
+    font-size: 10px;
     margin-bottom: 0;
   }
   .box-text p {
-    font-size: 5px;
+    font-size: 8px;
   }
 
 .notice{
@@ -554,7 +555,7 @@
 
     .noticeContainer{
       justify-content: space-between !important;
-      gap: 5px;
+      gap: 1rem;
     }
     .notice-text{
       padding: 10px;

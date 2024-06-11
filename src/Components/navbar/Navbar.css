@@ -1,44 +1,123 @@
-.navbar{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 1rem;
-    position: relative;
-    background-color: #fff;
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  position: relative;
+  background-color: #fff;
 }
 
-.nav-logo{
-    display: flex;
-    /* width: 20%; */
-    /* margin-left: 4rem; */
+.menu {
+  display: none;
 }
 
-.nav-links{
-    color: #000;
-    display: flex;
-    /* width: 60%; */
-    gap: 1rem;
-    justify-content: space-between;
-    font-size: 16px;
-    font-weight: 400;
-    cursor: pointer;
-    /* margin-right: 4rem; */
+.nav-logo {
+  display: flex;
+  /* width: 20%; */
+  /* margin-left: 4rem; */
 }
 
-.nav-links p{
-    color: #000;
-    font-size: 16px;
-    font-weight: 400;
+.nav-links {
+  color: #000;
+  display: flex;
+  /* width: 60%; */
+  gap: 1rem;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  /* margin-right: 4rem; */
 }
 
+.nav-links p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
 
-.nav-links p:focus{
-    font-weight: 700;
+.nav-links p:focus {
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 935px) {
-.navbar{
+  .navbar {
     display: none;
-}
+  }
+  .menu {
+    display: block;
+  }
+
+  .menuLogo{
+    display: flex;
+    width: 100%;
+    background-color: #601928;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  .leftArrow{
+    width: fit-content;
+    margin-left: 2rem;
+  }
+
+  .Mlogo{
+    width: fit-content;
+    margin-right: 2rem;
+  }
+
+  .menuIcon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  
+  /* .menuIcon div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+  } */
+  
+  /* Side Menu */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    width: 100%;
+    height: 100%;
+    background: #B2C0BA;
+    color: #000;
+    transition: left 0.3s;
+    z-index: 1;
+  }
+  
+  .menuList{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem ;
+  }
+
+  .menuList p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 1rem;
+  }
+
+  .mRedLine{
+    width: 100%;
+    border: 1px solid #601928;
+  }
+
+  .side-menu.open {
+    left: 0; 
+  }
+  
+  body.no-scroll{
+    overflow: hidden !important;
+  }
+
 }

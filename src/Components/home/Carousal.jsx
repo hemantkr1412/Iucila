@@ -9,19 +9,31 @@ const Carousal = () => {
   const [slidesToShow, setSlidesToShow] = useState(2);
   const [slidesToScroll, setSlidesToScroll] = useState(1);
   const sliderRef = useRef(null);
+  const [autoplay, setAutoplay] = useState(false);
 
   useEffect(() => {
     const updateSlidesToShow = () => {
       const screenWidth = window.innerWidth;
 
-      if (screenWidth >= 1220) setSlidesToShow(3);
-      else if (screenWidth >= 820) setSlidesToShow(2);
-      else if (screenWidth >= 770) setSlidesToShow(1);
-      else if (screenWidth >= 500) setSlidesToShow(3);
-      else if (screenWidth >= 300) setSlidesToShow(2);
-      else {
+      if (screenWidth >= 1220) {
+        setSlidesToShow(3);
+        setAutoplay(false);
+      } else if (screenWidth >= 820) {
+        setSlidesToShow(2);
+        setAutoplay(false);
+      } else if (screenWidth >= 770) {
+        setSlidesToShow(1);
+        setAutoplay(true);
+      } else if (screenWidth >= 600) {
+        setSlidesToShow(3);
+        setAutoplay(true);
+      } else if (screenWidth >= 400) {
+        setSlidesToShow(2);
+        setAutoplay(true);
+      } else {
         setSlidesToShow(1);
         setSlidesToScroll(1);
+        setAutoplay(true);
       }
     };
     updateSlidesToShow();
@@ -38,6 +50,9 @@ const Carousal = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: slidesToScroll,
     arrows: false,
+    autoplay: autoplay,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
   };
 
   const handlePrev = () => {
