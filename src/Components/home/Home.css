@@ -240,21 +240,27 @@
   width: 100%;
 }
 
+.box{
+  display: flex;
+  align-items: center;
+}
+
 .box-item {
   width: 361px;
   height: auto;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid #ccc; */
-  /* box-sizing: border-box; */
   border-radius: 10px;
   margin: auto;
+  min-height: 460px;
 }
 
 .box-text {
   display: flex;
   flex-direction: column;
   padding: 0 1.5rem;
+  flex-grow: 1;
+  justify-content: flex-start;
 }
 
 .box-text h4 {
@@ -268,7 +274,7 @@
   font-size: 14px;
   font-weight: 400;
   color: #000;
-  margin-top: 0;
+  margin-top: auto;
 }
 
 .box-item img {
@@ -411,7 +417,11 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
+
+  .Rline{
+    display: none;
+  }
 
   .Gline{
     border: 5px solid #90ac37
@@ -450,9 +460,14 @@
   }
 
   .objectives {
-    padding: 1rem;
-    gap: 1rem;
+    padding: 2rem 1rem 0rem 1rem;
+    gap: 0.5rem;
   }
+
+.greenLine{
+  left: 3rem;
+  top: -0.5rem;
+}
 
   .obj,
   .val {
@@ -465,12 +480,14 @@
 
   .obj h2,
   .val h2 {
-    font-size: 10px;
+    font-size: 12px;
+    margin: 0;
+    line-height: 0;
   }
 
   .obj li,
   .val li {
-    font-size: 6px;
+    font-size: 7px;
   }
 
   .somosTitle h1 {
@@ -480,6 +497,7 @@
 
   .somosContainer{
     padding: 4rem 1rem;
+    background-image: url("/assets/somosLineM.png");
   }
 
   .somosBox {
@@ -494,19 +512,29 @@
     font-size: 10px;
   }
 
+  .next, .prev{
+    display: none;
+  }
+
   .box-item {
-    width: 115px;
+    width: 125px;
+    min-height:185px;
+  }
+
+  .box-text{
+    padding: 0 0.5rem;
   }
 
   .box-text h4 {
     font-size: 6px;
+    margin-bottom: 0;
   }
   .box-text p {
     font-size: 5px;
   }
 
 .notice{
-  padding: 1rem;
+  padding: 2rem;
 }
 
   .notice h2 {
@@ -514,7 +542,14 @@
   }
 
   .noticeBox{
-    width: 115px;
+    width: 100%;
+    flex-direction: row;
+    }
+
+    .noticeBox img{
+      width: 50%;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0;
     }
 
     .noticeContainer{
@@ -522,18 +557,20 @@
       gap: 5px;
     }
     .notice-text{
-      padding: 5px;
+      padding: 10px;
+      justify-content: center;
     }
 
   .notice-text h5 {
-    font-size: 4px;
-  }
-
-  .notice-text h4 {
     font-size: 6px;
   }
 
+  .notice-text h4 {
+    font-size: 10px;
+  }
+
   .notice-text p {
-    font-size: 5px;
+    font-size: 7px;
+    margin-top: 0;
   }
 }

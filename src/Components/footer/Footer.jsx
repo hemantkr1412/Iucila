@@ -1,6 +1,5 @@
 import React from "react";
-import "./Footer.css"
-
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -22,8 +21,12 @@ const Footer = () => {
           <h5>© 2024 by UGD. All rights reserved</h5>
         </div>
       </div>
+
       <div className="footerLogo">
         <img src="/assets/footerLogo.png" />
+        <div className="copyrightM">
+          <h5>© 2024 by UGD. All rights reserved</h5>
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 1rem;
     position: relative;
     background-color: #fff;
@@ -11,7 +11,7 @@
 .nav-logo{
     display: flex;
     /* width: 20%; */
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
 }
 
 .nav-links{
@@ -23,7 +23,7 @@
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
-    margin-right: 4rem;
+    /* margin-right: 4rem; */
 }
 
 .nav-links p{
@@ -37,7 +37,7 @@
     font-weight: 700;
 }
 
-@media only screen and (max-width: 1015px) {
+@media only screen and (max-width: 935px) {
 .navbar{
     display: none;
 }
