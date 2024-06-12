@@ -9,7 +9,6 @@ const Navbar = () => {
           <img src="/assets/logo.png" />
         </div>
         <div className="nav-links">
-          <p>Home</p>
 
           <p>Institucional</p>
 

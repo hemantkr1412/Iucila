@@ -27,8 +27,6 @@ const Sidebar = () => {
           <img className="Mlogo" src="/assets/Mlogo.png" />
         </div>
         <div className="menuList">
-          <p>Home</p>
-            <div className="mRedLine" />
           <p>Institucional</p>
           <div className="mRedLine" />
           <p>Comunidad academica</p>

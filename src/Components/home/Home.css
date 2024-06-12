@@ -8,14 +8,17 @@
 .Gline {
   width: 100%;
   border: 10px solid #90ac37;
+  z-index: 2000;
 }
 
 .home {
   display: flex;
-  width: 100%;
+  width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: visible;
+  position: sticky;
 }
 
 .intro {
@@ -28,6 +31,10 @@
   background-size: cover;
   padding: 16rem 6rem 4rem 6rem;
   color: #fff;
+  position: fixed;
+  /* z-index: 1000; */
+  left: 0;
+  top: 4rem;
 }
 
 .intro h1 {
@@ -44,7 +51,7 @@
 .intro2 {
   display: flex;
   width: 100%;
-  /* height: auto; */
+  height: 100%;
   background-image: url("/assets/intro2BG.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -52,6 +59,8 @@
   gap: 4rem;
   color: #fff;
   /* justify-content: space-between; */
+  z-index: 2000;
+  margin-top: 42.5rem;
 }
 
 .intro2part1 {
@@ -116,6 +125,7 @@
   background-size: 100% 100%;
   padding: 4rem;
   gap: 3rem;
+  z-index: 2000;
 }
 
 .obj,
@@ -154,6 +164,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  z-index: 2000;
 }
 
 .somosTitle {
@@ -187,6 +198,7 @@
   background-size: cover;
   padding: 8rem 2rem 6rem 2rem;
   gap: 1rem;
+  background-color: #fff;
 }
 
 .somosBox {
@@ -226,6 +238,8 @@
   width: 100%;
   overflow: hidden;
   padding: 4rem 0rem;
+  z-index: 2000;
+  background-color: #fff;
   /* margin: auto; */
 }
 
@@ -240,7 +254,7 @@
   width: 100%;
 }
 
-.box{
+.box {
   display: flex;
   align-items: center;
 }
@@ -309,6 +323,7 @@
   width: 100%;
   background-color: #4d4d4d;
   padding: 4rem 4rem;
+  z-index: 2000;
 }
 
 .notice h2 {
@@ -390,6 +405,10 @@
     gap: 2rem;
   }
 
+  .intro {
+    padding: 10rem 4rem 11rem 4rem;
+  }
+
   .objectives {
     padding: 4rem 2rem;
   }
@@ -415,21 +434,23 @@
   .val {
     width: 315px;
   }
-  
-  .Rline{
+
+  .intro {
+    top: 0;
+  }
+
+  .Rline {
     display: none;
   }
 }
 
 @media only screen and (max-width: 769px) {
-
-
-  .Gline{
-    border: 5px solid #90ac37
+  .Gline {
+    border: 5px solid #90ac37;
   }
 
-  .intro{
-    padding: 10rem 2rem 2rem 2rem;
+  .intro {
+    padding: 6rem 2rem 6rem 2rem;
   }
 
   .intro h1 {
@@ -440,8 +461,9 @@
     font-size: 7px;
   }
 
-  .intro2{
-    padding: 4rem 1rem ;
+  .intro2 {
+    padding: 4rem 1rem;
+    margin-top: 15.5rem;
   }
 
   .title2 h2 {
@@ -465,17 +487,18 @@
     gap: 0.5rem;
   }
 
-.greenLine{
-  left: 3rem;
-  top: -0.5rem;
-}
+  .greenLine {
+    left: 3rem;
+    top: -0.5rem;
+  }
 
   .obj,
   .val {
     width: 159px;
   }
 
-  .obj ul, .val ul{
+  .obj ul,
+  .val ul {
     padding: 0 0 0 0.5rem;
   }
 
@@ -496,7 +519,7 @@
     padding: 4rem 2rem;
   }
 
-  .somosContainer{
+  .somosContainer {
     padding: 4rem 1rem;
     background-image: url("/assets/somosLineM.png");
   }
@@ -513,16 +536,17 @@
     font-size: 10px;
   }
 
-  .next, .prev{
+  .next,
+  .prev {
     display: none;
   }
 
   .box-item {
     width: 175px;
-    min-height:265px;
+    min-height: 265px;
   }
 
-  .box-text{
+  .box-text {
     padding: 0 0.5rem;
   }
 
@@ -534,33 +558,33 @@
     font-size: 8px;
   }
 
-.notice{
-  padding: 2rem;
-}
+  .notice {
+    padding: 2rem;
+  }
 
   .notice h2 {
     font-size: 10px;
   }
 
-  .noticeBox{
+  .noticeBox {
     width: 100%;
     flex-direction: row;
-    }
+  }
 
-    .noticeBox img{
-      width: 50%;
-      border-bottom-left-radius: 10px;
-      border-top-right-radius: 0;
-    }
+  .noticeBox img {
+    width: 50%;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
 
-    .noticeContainer{
-      justify-content: space-between !important;
-      gap: 1rem;
-    }
-    .notice-text{
-      padding: 10px;
-      justify-content: center;
-    }
+  .noticeContainer {
+    justify-content: space-between !important;
+    gap: 1rem;
+  }
+  .notice-text {
+    padding: 10px;
+    justify-content: center;
+  }
 
   .notice-text h5 {
     font-size: 6px;
