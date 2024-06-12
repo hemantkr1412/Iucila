@@ -25,6 +25,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  /* height: 100vh; */
   background-image: url("/assets/home.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -386,9 +387,14 @@
 }
 
 @media only screen and (min-width: 1560px) {
-  .intro {
-    height: 93lvh;
+  .intro{
+    height: 100vh;
+  }  
+
+  .intro2{
+    margin-top: 54rem;
   }
+
 }
 
 @media only screen and (max-width: 1270px) {
