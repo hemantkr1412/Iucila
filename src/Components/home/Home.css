@@ -605,3 +605,18 @@
     margin-top: 0;
   }
 }
+
+@media only screen and (max-width: 450px) {
+
+.intro2{
+  padding: 4rem 0.5rem;
+}
+
+.notice{
+  padding: 2rem 1rem;
+}
+
+.noticeBox img{
+  width: 50%;
+}
+}

@@ -3,7 +3,7 @@ import React from "react";
 const Notice = () => {
   return (
     <div className="notice">
-      <h2>Últimas Noticias</h2>
+      <h2>Últimas noticias</h2>
       <div className="noticeContainer">
         <div className="noticeBox">
           <img src="/assets/notice1.png" />

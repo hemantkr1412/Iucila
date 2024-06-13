@@ -14,9 +14,9 @@ const Navbar = () => {
 
           <p>Comunidad academica</p>
 
-          <p>Propuesta Académica</p>
+          <p>Propuesta académica</p>
 
-          <p>Propuesta Académica</p>
+          <p>Noticias</p>
           <p>Buscador</p>
         </div>
       </div>

@@ -23,7 +23,11 @@ const Sidebar = () => {
       </div>
       <div className={`side-menu ${isMenuOpen ? "open" : ""}`}>
         <div className="menuLogo">
-          <img onClick={toggleMenu} className="leftArrow" src="/assets/leftArrow.png" />
+          <img
+            onClick={toggleMenu}
+            className="leftArrow"
+            src="/assets/leftArrow.png"
+          />
           <img className="Mlogo" src="/assets/Mlogo.png" />
         </div>
         <div className="menuList">
@@ -31,9 +35,9 @@ const Sidebar = () => {
           <div className="mRedLine" />
           <p>Comunidad academica</p>
           <div className="mRedLine" />
-          <p>Propuesta Académica</p>
+          <p>Propuesta académica</p>
           <div className="mRedLine" />
-          <p>Propuesta Académica</p>
+          <p>Noticias</p>
           <div className="mRedLine" />
           <p>Buscador</p>
           <div className="mRedLine" />
