@@ -5,7 +5,6 @@
   border: 10px solid #712f3c;
   position: fixed;
   top: 4rem;
-  /* z-index: 1; */
 }
 
 .Gline {
@@ -28,7 +27,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* height: 100vh; */
   background-image: url("/assets/home.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -36,7 +34,6 @@
   padding: 16rem 6rem 4rem 6rem;
   color: #fff;
   position: fixed;
-  /* z-index: 1000; */
   left: 0;
   top: 5rem;
 }
@@ -55,14 +52,12 @@
 .intro2 {
   display: flex;
   width: 100%;
-  height: 100%;
   background-image: url("/assets/intro2BG.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 4rem 4rem 4rem 6rem;
+  background-size: 99% 100%;
+  padding: 5rem 4rem 5rem 6rem;
   gap: 4rem;
   color: #fff;
-  /* justify-content: space-between; */
   z-index: 2000;
   margin-top: 43.5rem;
 }
@@ -126,8 +121,8 @@
   width: 100%;
   background-image: url("/assets/objective.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 2rem 4rem;
+  background-size: 99% 100%;
+  padding: 4rem;
   gap: 1.5rem;
   z-index: 2000;
 }
@@ -245,7 +240,6 @@
   padding: 4rem 0rem;
   z-index: 2000;
   background-color: #fff;
-  /* margin: auto; */
 }
 
 .slider-box {
@@ -297,8 +291,6 @@
 }
 
 .box-item img {
-  /* width: min-content; */
-  /* height: auto; */
   object-fit: contain;
   margin-bottom: 10px;
   border-top-left-radius: 10px;
@@ -343,7 +335,6 @@
   justify-content: space-between;
   height: auto;
   width: 100%;
-  /* gap: 2rem; */
 }
 
 .noticeBox {
@@ -380,7 +371,6 @@
 .notice-text h4 {
   font-size: 18px;
   font-weight: 700;
-  /* margin-bottom: auto; */
 }
 
 .notice-text p {
