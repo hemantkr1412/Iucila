@@ -55,16 +55,18 @@
   background-image: url("/assets/intro2BG.png");
   background-repeat: no-repeat;
   background-size: 99% 100%;
-  padding: 5rem 4rem 5rem 6rem;
+  padding: 5rem 4rem 6rem 6rem;
   gap: 4rem;
   color: #fff;
   z-index: 2000;
   margin-top: 43.5rem;
+  height: 100vh;
 }
 
 .intro2part1 {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 70%;
 }
 
@@ -85,7 +87,7 @@
 }
 
 .intro2Img img {
-  width: 80%;
+  width: 85%;
 }
 
 .intro2part2 {
@@ -125,6 +127,7 @@
   padding: 4rem;
   gap: 1.5rem;
   z-index: 2000;
+  height: 100vh;
 }
 
 .obj,
@@ -409,7 +412,7 @@
   }
 
   .objectives {
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 0 2rem;
   }
 
   .obj,
@@ -417,7 +420,7 @@
     width: 386px;
   }
 
-  .obj h2,
+  /* .obj h2,
   .val h2 {
     font-size: 26px;
   }
@@ -425,7 +428,7 @@
   .obj li,
   .val li {
     font-size: 14px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 935px) {
@@ -463,6 +466,7 @@
   .intro2 {
     padding: 4rem 1rem;
     margin-top: 15.5rem;
+    height: auto;
   }
 
   .title2 h2 {
@@ -482,8 +486,9 @@
   }
 
   .objectives {
-    padding: 2rem 1rem 0rem 1rem;
+    padding: 3rem 1rem 1rem 1rem;
     gap: 0.5rem;
+    height: auto;
   }
 
   .greenLine {
