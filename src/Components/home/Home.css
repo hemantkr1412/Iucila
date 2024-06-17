@@ -59,7 +59,7 @@
   background-image: url("/assets/intro2BG.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 6rem 4rem 8rem 6rem;
+  padding: 4rem 4rem 6rem 6rem;
   gap: 4rem;
   color: #fff;
   /* justify-content: space-between; */
@@ -90,7 +90,7 @@
 }
 
 .intro2Img img {
-  width: 100%;
+  width: 80%;
 }
 
 .intro2part2 {
@@ -127,8 +127,8 @@
   background-image: url("/assets/objective.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 4rem;
-  gap: 3rem;
+  padding: 2rem 4rem;
+  gap: 1.5rem;
   z-index: 2000;
 }
 
@@ -146,6 +146,7 @@
   font-weight: 700;
   color: #272727;
   white-space: nowrap;
+  margin-bottom: 10px;
 }
 
 .obj li,
@@ -608,6 +609,9 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .intro2Img img{
+    width: 100%;
+  }
   .noticeBox{
     width: 100%;
   }
