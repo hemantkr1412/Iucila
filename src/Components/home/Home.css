@@ -60,7 +60,7 @@
   color: #fff;
   z-index: 2000;
   margin-top: 43.5rem;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .intro2part1 {
@@ -127,7 +127,7 @@
   padding: 4rem;
   gap: 1.5rem;
   z-index: 2000;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .obj,
