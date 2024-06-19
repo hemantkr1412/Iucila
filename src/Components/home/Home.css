@@ -36,6 +36,7 @@
   position: fixed;
   left: 0;
   top: 5rem;
+  height: 100vh;
 }
 
 .intro h1 {
@@ -54,12 +55,12 @@
   width: 100%;
   background-image: url("/assets/intro2BG.png");
   background-repeat: no-repeat;
-  background-size: 99% 100%;
+  background-size: 100% 100%;
   padding: 5rem 4rem 6rem 6rem;
   gap: 4rem;
   color: #fff;
   z-index: 2000;
-  margin-top: 43.5rem;
+  margin-top: 100vh;
   min-height: 100vh;
 }
 
@@ -123,7 +124,7 @@
   width: 100%;
   background-image: url("/assets/objective.png");
   background-repeat: no-repeat;
-  background-size: 99% 100%;
+  background-size: 100% 100%;
   padding: 4rem;
   gap: 1.5rem;
   z-index: 2000;
@@ -388,9 +389,9 @@
     height: 100vh;
   }
 
-  .intro2 {
+  /* .intro2 {
     margin-top: 54rem;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1270px) {
@@ -453,74 +454,115 @@
 
   .intro {
     padding: 6rem 2rem 6rem 2rem;
+    justify-content: end;
   }
 
   .intro h1 {
-    font-size: 14px;
+    font-size: 42px;
   }
 
   .intro p {
-    font-size: 7px;
+    font-size: 16px;
+  }
+
+  .intro2Img img {
+    width: 75%;
   }
 
   .intro2 {
-    padding: 4rem 1rem;
-    margin-top: 15.5rem;
-    height: auto;
+    flex-direction: column;
+    background-image: url("/assets/intro2BGM.png");
+    gap: 4rem;
+    padding: 2rem 1rem;
+    align-items: center;
+    justify-content: space-between;
+    /* min-height: auto; */
+    gap: 10rem;
+  }
+  .intro2part1 {
+    width: 60%;
+    /* padding: 0 2rem; */
   }
 
+  .intro2part2 {
+    width: 80%;
+    padding: 0 0 0 0;
+    /* margin-bottom: 10rem; */
+  
+  }
+
+  .break {
+    display: none;
+  }
   .title2 h2 {
-    font-size: 10px;
+    font-size: 18px;
   }
 
   .title2 p {
-    font-size: 6px;
+    font-size: 14px;
   }
 
   .intro2part2 h2 {
-    font-size: 10px;
+    font-size: 26px;
+    text-shadow: 3px 4px 10px #FFFFFF;
   }
 
   .intro2part2 p {
-    font-size: 6px;
+    font-size: 18px;
+    text-shadow: 2px 4px 8px #FFFFFF80;
   }
+
 
   .objectives {
-    padding: 3rem 1rem 1rem 1rem;
-    gap: 0.5rem;
-    height: auto;
+    background-image: url("/assets/objectiveM.png");
+    min-height: 100vh;
+    padding: 3rem 2rem 0rem 2rem;
   }
 
-  .greenLine {
-    left: 3rem;
-    top: -0.5rem;
-  }
+.greenLine{
+  transform: translateX(-8rem);
+  margin-bottom: 1rem;
+}
 
   .obj,
   .val {
-    width: 159px;
+    width: 100%;
+  }
+  .val{
+    margin-bottom: 28rem;
   }
 
   .obj ul,
   .val ul {
-    padding: 0 0 0 0.5rem;
+    padding: 0 0 0 1.5rem;
   }
 
   .obj h2,
   .val h2 {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0;
     line-height: 0;
   }
 
   .obj li,
   .val li {
-    font-size: 7px;
+    font-size: 11px;
+  }
+
+
+  .somosTitle {
+    background-image: url("/assets/somosM.png");
+    min-height: 642px;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 
   .somosTitle h1 {
-    font-size: 16px;
-    padding: 4rem 2rem;
+    position: relative;
+    top: -4rem;
+    left: 2rem;
+    font-size: 24px;
+    padding: 4rem 0rem;
   }
 
   .somosContainer {
@@ -603,11 +645,24 @@
   }
 }
 
+
+
 @media only screen and (max-width: 450px) {
   .intro2Img img{
     width: 100%;
   }
-  .noticeBox{
+
+  .intro2part1{
+    width: 80%;
+  }
+  
+.val{
+  margin-bottom: 32rem;
+}
+
+  
+
+  .noticeBox {
     width: 100%;
   }
 }

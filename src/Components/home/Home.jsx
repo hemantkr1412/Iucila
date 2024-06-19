@@ -14,7 +14,7 @@ const Home = () => {
           <h1>Inspiramos la jerarquización del corretaje en Latinoamérica</h1>
           <p>
             Somos el Instituto  de Formación Oficial del sector inmobiliario
-            latinoamericano. 700.000 corredores en 18 países conforman la
+            latinoamericano.<br></br> 700.000 corredores en 18 países conforman la
             Confederación Inmobiliaria Latinoamericana (CILA)
           </p>
         </div>
@@ -24,7 +24,7 @@ const Home = () => {
               <div className="title2">
                 <h2>ALIANZA ESTRATÉGICA</h2>
                 <p>
-                  Cooperación para la formación, capacitación<br></br> y
+                  Cooperación para la formación, capacitación<br className="break"></br> y
                   actualización profesional en Latinoamérica.
                 </p>
               </div>
