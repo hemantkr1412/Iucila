@@ -1,20 +1,27 @@
-
-import './App.css'
-import Footer from './Components/footer/Footer'
-import Home from './Components/home/Home'
-import Navbar from './Components/navbar/Navbar'
-import Sidebar from './Components/navbar/Sidebar'
+import "./App.css";
+import Comunidad from "./Components/comunidad/Comunidad";
+import Footer from "./Components/footer/Footer";
+import Home from "./Components/home/Home";
+import Navbar from "./Components/navbar/Navbar";
+import Sidebar from "./Components/navbar/Sidebar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-
   return (
-    <div className='app'>
-        <Navbar/>
+    <div className="app">
+      <Router>
+        <Navbar />
         <Sidebar />
-        <Home/>
-        <Footer/>
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/comunidad-academica" element={<Comunidad />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

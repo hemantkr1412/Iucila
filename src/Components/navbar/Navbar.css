@@ -4,10 +4,19 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 0.5rem 0;
-  position: fixed;
+  position: sticky;
   background-color: #fff;
   top: 0;
   left: 0;
+  z-index: 0;
+}
+
+.navbar.sticky{
+  position: sticky;
+}
+
+.navbar.relative{
+  position: relative;
 }
 
 .menu {
@@ -37,6 +46,7 @@
 .nav-links p:focus {
   font-weight: 700;
 }
+
 
 @media only screen and (max-width: 935px) {
   .navbar {
@@ -100,6 +110,7 @@
     font-size: 20px;
     font-weight: 400;
     margin-left: 1rem;
+    color: #000;
   }
 
   .mRedLine {

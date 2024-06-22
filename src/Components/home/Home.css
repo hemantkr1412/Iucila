@@ -7,6 +7,10 @@
   top: 4rem;
 }
 
+.Rline.absolute{
+  position: absolute;
+}
+
 .Gline {
   width: 100%;
   border: 10px solid #90ac37;

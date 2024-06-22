@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Sidebar = () => {
@@ -28,12 +29,16 @@ const Sidebar = () => {
             className="leftArrow"
             src="/assets/leftArrow.png"
           />
-          <img className="Mlogo" src="/assets/Mlogo.png" />
+          <Link to="/" onClick={toggleMenu}>
+            <img className="Mlogo" src="/assets/Mlogo.png" />
+          </Link>
         </div>
         <div className="menuList">
           <p>Institucional</p>
           <div className="mRedLine" />
-          <p>Comunidad academica</p>
+          <Link to="/comunidad-academica" onClick={toggleMenu}>
+            <p>Comunidad academica</p>
+          </Link>
           <div className="mRedLine" />
           <p>Propuesta académica</p>
           <div className="mRedLine" />

@@ -1,18 +1,23 @@
 import React from "react";
 import "./Navbar.css";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   return (
     <>
-      <div className="navbar">
+      <div className={`navbar ${isHomePage ? "sticky" : "relative"}`}>
         <div className="nav-logo">
+          <Link to='/'>
           <img src="/assets/logo.png" />
+          </Link>
         </div>
         <div className="nav-links">
-
           <p>Institucional</p>
-
-          <p>Comunidad academica</p>
+          <Link to="/comunidad-academica">
+            <p>Comunidad academica</p>
+          </Link>
 
           <p>Propuesta académica</p>
 
@@ -20,6 +25,7 @@ const Navbar = () => {
           <p>Buscador</p>
         </div>
       </div>
+      <div className={`Rline ${isHomePage ? "fixed" : "absolute"}`} />
     </>
   );
 };
