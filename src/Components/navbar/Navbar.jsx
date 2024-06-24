@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <div className="nav-links">
           <p>Institucional</p>
-          <Link to="/comunidad-academica">
+          <Link to="/comunidadAcademica">
             <p>Comunidad academica</p>
           </Link>
 
