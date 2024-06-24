@@ -425,15 +425,6 @@
     width: 386px;
   }
 
-  /* .obj h2,
-  .val h2 {
-    font-size: 26px;
-  }
-
-  .obj li,
-  .val li {
-    font-size: 14px;
-  } */
 }
 
 @media only screen and (max-width: 935px) {
@@ -480,19 +471,15 @@
     padding: 2rem 1rem;
     align-items: center;
     justify-content: space-between;
-    /* min-height: auto; */
     gap: 10rem;
   }
   .intro2part1 {
     width: 60%;
-    /* padding: 0 2rem; */
   }
 
   .intro2part2 {
     width: 80%;
     padding: 0 0 0 0;
-    /* margin-bottom: 10rem; */
-  
   }
 
   .break {

@@ -1,10 +1,12 @@
-import "./App.css";
-import Comunidad from "./Components/comunidad/Comunidad";
-import Footer from "./Components/footer/Footer";
-import Home from "./Components/home/Home";
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/navbar/Navbar";
 import Sidebar from "./Components/navbar/Sidebar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./Components/footer/Footer";
+import "./App.css";
+
+const Home = lazy(() => import("./Components/home/Home"));
+const Comunidad = lazy(() => import("./Components/comunidad/Comunidad"));
 
 function App() {
   return (
@@ -13,10 +15,12 @@ function App() {
         <Navbar />
         <Sidebar />
         <div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/comunidadAcademica" element={<Comunidad />} />
-          </Routes>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/comunidadAcademica" element={<Comunidad />} />
+            </Routes>
+          </Suspense>
         </div>
         <Footer />
       </Router>

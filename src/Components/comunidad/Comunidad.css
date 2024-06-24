@@ -3,9 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   margin-top: 1rem;
-  /* padding-bottom: 6rem; */
 }
 
 .directors {
@@ -17,7 +15,6 @@
 }
 .directorsProfile {
   width: 1200px;
-  /* width: 80%; */
   display: flex;
   flex-direction: column;
   color: #000;
@@ -35,7 +32,6 @@
   display: flex;
   align-items: center;
   text-align: justify;
-  /* justify-content: space-evenly; */
 }
 
 .directorsImg {
@@ -113,7 +109,6 @@
 .comunidadIntro2Text {
   width: 60%;
   height: 25%;
-  /* border: 1px solid #FFF; */
   margin-bottom: 3rem;
 }
 
@@ -157,12 +152,10 @@
   color: #fff;
   text-align: center;
   padding-top: 1.7rem;
-  /* padding: 1.7rem 2rem 0 2rem; */
 }
 
 .alphabets p {
   margin-top: 0;
-  /* line-height: 1.2; */
 }
 
 .comunidadBoxText {
@@ -247,7 +240,6 @@
   .alphabets {
     width: 100%;
     text-align: right;
-    /* padding-right: 2rem; */
     padding: 1rem 2rem 1rem 0;
   }
   .alphabets p{

@@ -1,3 +1,13 @@
+.Rline {
+  display: flex;
+  width: 100%;
+  background-color: #712f3c;
+  border: 10px solid #712f3c;
+  position: static;
+  top: 4rem;
+}
+
+
 .navbar {
   display: flex;
   width: 100%;
