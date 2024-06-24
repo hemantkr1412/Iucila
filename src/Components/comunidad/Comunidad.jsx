@@ -81,7 +81,9 @@ const Comunidad = () => {
             </div>
           </div>
           <div className="comunidadBox">
-            <div className="alphabets">B</div>
+            <div className="alphabets">
+              <p>B</p>
+              </div>
             <div className="comunidadBoxText">
               <p>
                 <b>
@@ -99,7 +101,7 @@ const Comunidad = () => {
             </div>
           </div>
           <div className="comunidadBox">
-            <div className="alphabets">C</div>
+            <div className="alphabets"><p>C</p></div>
             <div className="comunidadBoxText">
               <p>
                 <b>
@@ -116,7 +118,7 @@ const Comunidad = () => {
             </div>
           </div>
           <div className="comunidadBox">
-            <div className="alphabets">D</div>
+            <div className="alphabets"><p>D</p></div>
             <div className="comunidadBoxText">
               <p>
                 <b>Si son un idóneo acreditado:</b> Para quienes se desempeñan
