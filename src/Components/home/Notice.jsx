@@ -6,7 +6,7 @@ const Notice = () => {
       <h2>Últimas noticias</h2>
       <div className="noticeContainer">
         <div className="noticeBox">
-          <img src="/assets/notice1.png" loading="lazy" />
+          <img src="/assets/notice1.png" loading="eager" />
           <div className="notice-text">
             <h5>18 noviembre 2023</h5>
             <h4>
@@ -23,7 +23,7 @@ const Notice = () => {
           </div>
         </div>
         <div className="noticeBox">
-          <img src="/assets/notice2.png" loading="lazy" />
+          <img src="/assets/notice2.png" loading="eager" />
           <div className="notice-text">
             <h5>05 abril 2023</h5>
             <h4>
@@ -38,7 +38,7 @@ const Notice = () => {
           </div>
         </div>
         <div className="noticeBox">
-          <img src="/assets/notice3.png" loading="lazy" />
+          <img src="/assets/notice3.png" loading="eager" />
           <div className="notice-text">
             <h5>10 febrero 2023</h5>
             <h4>

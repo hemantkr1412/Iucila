@@ -11,7 +11,7 @@ const Comunidad = () => {
             <h3>{info.title}</h3>
             <div className="directorsBox">
               <div className="directorsImg">
-                <img src={info.img} loading="lazy" />
+                <img src={info.img} loading="eager" />
               </div>
               <div className="directorsText">
                 <h2>{info.name}</h2>
