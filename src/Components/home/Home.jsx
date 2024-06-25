@@ -29,7 +29,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="intro2Img">
-                <img src="/assets/intro2.png" loading="eager" />
+                <img src="/assets/intro2.png"  />
               </div>
             </div>
             <div className="intro2part2">

@@ -73,7 +73,7 @@ const Carousal = () => {
           {carousalData.map((box, index) => (
             <div className="box">
               <div key={index} className="box-item">
-                <img src={box.img} loading="eager" />
+                <img src={box.img}  />
                 <div className="box-text">
                   <h4>{box.header}</h4>
                   <p>{box.description}</p>
