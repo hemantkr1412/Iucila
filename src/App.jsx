@@ -1,12 +1,12 @@
-import React, { Suspense, lazy } from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+// import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/navbar/Navbar";
 import Sidebar from "./Components/navbar/Sidebar";
 import Footer from "./Components/footer/Footer";
 import "./App.css";
 
-const Home = lazy(() => import("./Components/home/Home"));
-const Comunidad = lazy(() => import("./Components/comunidad/Comunidad"));
+import Home from "./Components/home/Home";
+import Comunidad from "./Components/comunidad/Comunidad";
 
 function App() {
   return (
@@ -15,12 +15,10 @@ function App() {
         <Navbar />
         <Sidebar />
         <div>
-          <Suspense fallback={<div>Loading...</div>}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/comunidad-academica" element={<Comunidad />} />
+              <Route path="/comunidadAcademica" element={<Comunidad />} />
             </Routes>
-          </Suspense>
         </div>
         <Footer />
       </Router>

@@ -11,7 +11,7 @@ const Comunidad = () => {
             <h3>{info.title}</h3>
             <div className="directorsBox">
               <div className="directorsImg">
-                <img src={info.img} />
+                <img src={info.img} loading="lazy" />
               </div>
               <div className="directorsText">
                 <h2>{info.name}</h2>
@@ -45,7 +45,7 @@ const Comunidad = () => {
 
       <div className="comunidadIntro2">
         <div className="comunidadIntro2Text">
-          <h2>Nuestros Estudiantes</h2>
+          <h2>Nuestros estudiantes</h2>
           <p>
             Nuestros estudiantes pueden ser tanto jóvenes que buscan una carrera
             a fin de orientar su desarrollo profesional, como personas que ya

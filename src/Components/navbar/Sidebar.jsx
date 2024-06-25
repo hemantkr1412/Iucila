@@ -36,7 +36,7 @@ const Sidebar = () => {
         <div className="menuList">
           <p>Institucional</p>
           <div className="mRedLine" />
-          <Link to="/comunidad-academica" onClick={toggleMenu}>
+          <Link to="/comunidadAcademica" onClick={toggleMenu}>
             <p>Comunidad academica</p>
           </Link>
           <div className="mRedLine" />

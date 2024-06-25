@@ -9,13 +9,13 @@ const Navbar = () => {
     <>
       <div className={`navbar ${isHomePage ? "sticky" : "relative"}`}>
         <div className="nav-logo">
-          <Link to='/'>
-          <img src="/assets/logo.png" />
+          <Link to="/">
+            <img src="/assets/logo.png" />
           </Link>
         </div>
         <div className="nav-links">
           <p>Institucional</p>
-          <Link to="/comunidad-academica">
+          <Link to="/comunidadAcademica">
             <p>Comunidad academica</p>
           </Link>
 
