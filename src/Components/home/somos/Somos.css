@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-image: url("/assets/somos.png");
+    background-image: url("/assets/somos.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -34,7 +34,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    background-image: url("/assets/somosLines.png");
+    background-image: url("/assets/somosLines.webp");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 8rem 2rem 6rem 2rem;
@@ -81,7 +81,7 @@
   @media only screen and (max-width: 769px) {
 
   .somosTitle {
-    background-image: url("/assets/somosM.png");
+    background-image: url("/assets/somosM.webp");
     min-height: 642px;
     justify-content: flex-end;
     align-items: flex-start;
@@ -97,7 +97,7 @@
 
   .somosContainer {
     padding: 4rem 1rem;
-    background-image: url("/assets/somosLineM.png");
+    background-image: url("/assets/somosLineM.webp");
   }
 
   .somosBox {

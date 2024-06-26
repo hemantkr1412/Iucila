@@ -14,8 +14,8 @@ const Footer = () => {
         <p>2do piso A</p>
         <p>Cludad Autonoma de Buenos Aires</p>
         <div className="socialLinks">
-          <img src="/assets/insta.png" />
-          <img src="/assets/fb.png" />
+          <img src="/assets/insta.webp" />
+          <img src="/assets/fb.webp" />
         </div>
         <div className="copyright">
           <h5>© 2024 by UGD. All rights reserved</h5>
@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
 
       <div className="footerLogo">
-        <img src="/assets/footerLogo.png" />
+        <img src="/assets/footerLogo.webp" />
         <div className="copyrightM">
           <h5>© 2024 by UGD. All rights reserved</h5>
         </div>

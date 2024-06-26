@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url("/assets/home.png");
+  background-image: url("/assets/home.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,7 +62,7 @@
 .intro2 {
   display: flex;
   width: 100%;
-  background-image: url("/assets/intro2BG.png");
+  background-image: url("/assets/intro2BG.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 5rem 4rem 6rem 6rem;
@@ -159,7 +159,7 @@
 
   .intro2 {
     flex-direction: column;
-    background-image: url("/assets/intro2BGM.png");
+    background-image: url("/assets/intro2BGM.webp");
     gap: 4rem;
     padding: 2rem 1rem;
     align-items: center;

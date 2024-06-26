@@ -20,17 +20,17 @@ const Sidebar = () => {
   return (
     <div className="menu">
       <div className="menuIcon" onClick={toggleMenu}>
-        <img src="/assets/menu.png" />
+        <img src="/assets/menu.webp" />
       </div>
       <div className={`side-menu ${isMenuOpen ? "open" : ""}`}>
         <div className="menuLogo">
           <img
             onClick={toggleMenu}
             className="leftArrow"
-            src="/assets/leftArrow.png"
+            src="/assets/leftArrow.webp"
           />
           <Link to="/" onClick={toggleMenu}>
-            <img className="Mlogo" src="/assets/Mlogo.png" />
+            <img className="Mlogo" src="/assets/Mlogo.webp" />
           </Link>
         </div>
         <div className="menuList">

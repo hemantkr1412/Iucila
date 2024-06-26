@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className={`navbar ${isHomePage ? "sticky" : "relative"}`}>
         <div className="nav-logo">
           <Link to="/">
-            <img src="/assets/logo.png" />
+            <img src="/assets/logo.webp" />
           </Link>
         </div>
         <div className="nav-links">
