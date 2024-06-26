@@ -212,8 +212,22 @@
     font-size: 15px;
   }
 
+  .comunidadIntro{
+    background-image: url("/assets/comunidadM.png");
+    align-items: end;
+    margin-bottom: 2rem;
+  }
+
+  .comunidadIntro2{
+    background-image: url("/assets/comunidad2M.png");
+  }
+
   .comunidadIntroText, .comunidadIntro2Text{
     width: 85%;
+  }
+
+  .comunidadIntroText h2, .comunidadIntroText p{
+    color: #000;
   }
 
   .comunidadIntroText h2,
@@ -263,4 +277,26 @@
     font-size: 14px;
     line-height: 1.8;
   }
+}
+
+@media only screen and (max-width: 520px) {
+  .comunidadIntro{
+    margin-bottom: 1rem;
+  }
+    .comunidadIntroText p{
+      line-height: 1.2;
+    }
+
+    .comunidadIntro2Text{
+      margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+  .comunidadIntro{
+    margin-bottom: 1rem;
+  }
+    .comunidadIntroText p{
+      line-height: 1.05;
+    }
 }
