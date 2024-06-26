@@ -35,21 +35,26 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 16rem 6rem 4rem 6rem;
+  padding: 0 6rem 0 6rem;
   color: #fff;
   position: fixed;
   left: 0;
   top: 5rem;
-  height: 100vh;
+  min-height: 100vh;
+  justify-content: flex-end;
 }
 
-.intro h1 {
+.introText{
+  margin-bottom: 8rem;
+}
+
+.introText h1 {
   font-size: 56px;
   font-weight: 700;
   text-shadow: 2px 4px 8px #00000080;
 }
 
-.intro p {
+.introText p {
   font-size: 24px;
   font-weight: 400;
 }
@@ -391,15 +396,6 @@
   margin-top: auto;
 }
 
-@media only screen and (min-width: 1560px) {
-  .intro {
-    height: 100vh;
-  }
-
-  /* .intro2 {
-    margin-top: 54rem;
-  } */
-}
 
 @media only screen and (max-width: 1270px) {
   .somosBox {
@@ -415,9 +411,9 @@
     gap: 2rem;
   }
 
-  .intro {
+  /* .intro {
     padding: 10rem 4rem 11rem 4rem;
-  }
+  } */
 
   .objectives {
     padding: 4rem 2rem 0 2rem;
@@ -450,15 +446,14 @@
   }
 
   .intro {
-    padding: 6rem 2rem 6rem 2rem;
-    justify-content: end;
+    padding: 0 2rem;
   }
 
-  .intro h1 {
+  .introText h1 {
     font-size: 42px;
   }
 
-  .intro p {
+  .introText p {
     font-size: 16px;
   }
 
