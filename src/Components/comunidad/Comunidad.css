@@ -224,6 +224,7 @@
 
   .comunidadIntroText, .comunidadIntro2Text{
     width: 85%;
+    margin-top: 32rem;
   }
 
   .comunidadIntroText h2, .comunidadIntroText p{
@@ -288,7 +289,7 @@
     }
 
     .comunidadIntro2Text{
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
 }
 
@@ -297,6 +298,6 @@
     margin-bottom: 1rem;
   }
     .comunidadIntroText p{
-      line-height: 1.05;
+      line-height: 1;
     }
 }
