@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
-import Objectives from "./Objectives";
-import Somos from "./Somos";
-import Carousal from "./Carousal";
-import Notice from "./Notice";
+import Objectives from "./objectives/Objectives";
+import Somos from "./somos/Somos";
+import Carousal from "./carousal/Carousal";
+import Notice from "./notice/Notice";
 
 const Home = () => {
   return (

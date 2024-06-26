@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css"
+import "./Objectives.css"
 
 const Objectives = () => {
   return (
